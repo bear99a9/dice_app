@@ -9,4 +9,8 @@ describe Dice do
   end
 
   it { is_expected.to respond_to(:roll).with(1).argument}
+
+  it "gives the right number of results" do
+    expect(subject.roll(10).size).to eq 10
+  end
 end
