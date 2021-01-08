@@ -1,8 +1,14 @@
 class Dice
 
   def roll(number = 1 )
-    arr = []
-    number.times { arr << rand(1..6)}
-    arr
+    result = []
+    number.times { result << roll_dice}
+    result
+  end
+
+  private
+
+  def roll_dice
+    rand(1..6)
   end
 end
