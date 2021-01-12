@@ -6,8 +6,6 @@ class Dice
     result
   end
 
-  private
-
   def roll_dice
     rand(1..6)
   end
